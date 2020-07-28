@@ -10,7 +10,7 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
 
-public class StudentInfo {
+public class StudentFileIO {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
@@ -36,7 +36,7 @@ public class StudentInfo {
 		file.createNewFile();
 		
 		FileWriter writer = new FileWriter(file); 
-		data+=name+","+phone+","+rollNo+","+address+";\n";
+		data+=name+","+phone+","+rollNo+","+address+";";
 		writer.write(data); 
 	    writer.flush();
 	    writer.close();
