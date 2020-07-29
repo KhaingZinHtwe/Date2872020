@@ -20,15 +20,15 @@ public class StudentMapList {
 		stdList.put("Mya Mya", new Student("Mya Mya","09-564211985","5css-83","Monywa"));
 		stdList.put("Thida", new Student("Thida","09-564212389","5cs-78","Monywa"));
 		
+		char response;
+		Scanner sc=new Scanner(System.in);
+		do {
 		Set s=stdList.entrySet();
 		
 		Iterator i=s.iterator();
-		char response;
-		Scanner sc=new Scanner(System.in);
 		
-		do {
-			System.out.println("Enter name:");
-			String name=sc.nextLine();
+		System.out.println("Enter name:");
+		String name=sc.nextLine();
 			
 		while(i.hasNext()) {
 			Map.Entry map=(Map.Entry) i.next();
